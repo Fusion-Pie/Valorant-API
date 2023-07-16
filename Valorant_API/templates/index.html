@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Valorant-API | Homepage</title>
-    <link rel="Icon" href="/media/assets/Valorant Logo.jpg">
+    <link rel="Icon" href="/media/assets/ValorantLogo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#ECE7E1]">
@@ -12,18 +12,46 @@
 
         <div class="flex">
             <div class="flex w-2/3">
-                <li class="flex items-center pl-10 p-5"><img class="flex h-7" src="/media/assets/Valorant Logo.jpg" alt="Valorant Logo"></li>
-                <li class="flex text-xl font-bold p-5">Home</li>
-                <li class="flex text-xl font-bold p-5">Agents</li>
+                <li class="flex items-center pl-10 p-5 hover:cursor-pointer"><img class="flex h-7" src="/media/assets/Valorant Logo.jpg" alt="Valorant Logo"></li>
+                <li class="flex text-xl font-bold p-5 hover:text-[#ff4457] hover:cursor-pointer">Home</li>
+                <li class="flex text-xl font-bold p-5 hover:text-[#ff4457] hover:cursor-pointer">Agents</li>
             </div>
 
             <div class="flex w-1/3 place-content-end">
-                <li class="flex text-xl font-bold p-5 pr-3">Logout</li>
-                <li class="flex items-center py-5 pr-10"><img class="h-6" src="/media/assets/logout.png" alt=""></li>
+                <li class="flex text-xl font-bold p-5 pr-3 hover:cursor-pointer hover:text-[#ff4457]">Logout</li>
+                <li class="flex items-center py-5 pr-10 hover: cursor-pointer"><img class="h-6" src="/media/assets/logout.png" alt=""></li>
             </div>
         </div>
 
     </nav>
+
+
+    <div class="flex flex-row w-full h-4/5 bg-[#0F1923]">
+        <img class="flex h-5/6 absolute inset-x-96 mt-10 scale-125 transition duration-1000 ease-out hover:scale-110" src="{{fullPortraitV2}}" alt="">
+        
+        <div class="flex basis-1/3 justify-center items-center py-64">
+            <p class="text-[#ff4457] text-8xl font-bold">
+                {{displayName}}
+            </p>
+        </div>
+
+        <div class="flex basis-1/3"></div>
+
+        <div class="flex basis-1/3">
+            <div class="flex flex-col text-[#ABABA8] pl-10 justify-center items-start">
+                <span class="text-md font-bold">// Role</span>
+                <span class="text-4xl font-extrabold mt-2">{{role}}</span>
+                <span class="text-md font-bold mt-6">// BioGraphy</span>
+                <span class="text-md font-semibold w-2/3 mt-2">{{desc}}</span>
+                <div class="border border-[#ABABA8] w-2/3 mt-24"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-72">
+        This is next div
+    </div>
     
 </body>
 </html>
