@@ -4,6 +4,12 @@
     <title>Valorant-API | Homepage</title>
     <link rel="Icon" href="/media/assets/ValorantLogo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .overflow-scroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 <body class="bg-[#ECE7E1]">
 
@@ -25,9 +31,36 @@
 
     </nav>
 
+    <!-- Agents List -->
+
+    <div class="flex w-full p-1 overflow-scroll">
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="BRIMSTONE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="PHOENIX" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="SAGE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="SOVA" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="VIPER" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="CYPHER" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="RENYA" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="KILLJOY" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="BREACH" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="OMEN" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="JETT" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="RAZE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="SKYE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="YORU" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="ASTRA" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="KAY/O" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="CHAMBER" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="NEON" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="FADE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="HARBOUR" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="GEKKO" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="DEADLOCK" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+    </div>
+
 
     <div class="flex flex-row w-full h-4/5 bg-[#0F1923]">
-        <img class="flex h-5/6 absolute inset-x-96 mt-10 scale-125 transition duration-1000 ease-out hover:scale-110" src="{{fullPortraitV2}}" alt="">
+        <img class="flex h-5/6 absolute inset-x-96 mt-10 transition duration-1000 ease-out hover:scale-110" src="{{fullPortraitV2}}" alt="">
         
         <div class="flex basis-1/3 justify-center items-center py-64">
             <p class="text-[#ff4457] text-8xl font-bold">
