@@ -13,10 +13,9 @@ info = requests.get("https://valorant-api.com/v1/agents", params=None).json()
 def home(request):
     if request.method == "POST":
         agent_name = request.POST.get('btn_name')
-        print(agent_name.capitalize())
         
         for data in info['data']:
-            if data['displayName'] == agent_name.capitalize():
+            if (data['displayName'] == agent_name.capitalize() and data['isPlayableCharacter']) or data['displayName'] == agent_name:
                 context = {
                     'uuid': data['uuid'],
                     'displayName': data['displayName'],
@@ -26,6 +25,7 @@ def home(request):
                     'fullPortraitV2': data['fullPortraitV2'],
                     'role': data['role']['displayName']
                 }
+
 
         return render(request, 'index.html', context=context)
 
