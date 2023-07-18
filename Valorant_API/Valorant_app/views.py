@@ -7,14 +7,12 @@ import requests
 info = requests.get("https://valorant-api.com/v1/agents", params=None).json()
 
 
-
-
 # Create your views here.
 def home(request):
     if request.method == "POST":
         agent_name = request.POST.get('btn_name')
         
-        for data in info['data']:
+        for data in info['data']:                                  # This is done for sova              # This is done for kay/o
             if (data['displayName'] == agent_name.capitalize() and data['isPlayableCharacter']) or data['displayName'] == agent_name:
                 context = {
                     'uuid': data['uuid'],
