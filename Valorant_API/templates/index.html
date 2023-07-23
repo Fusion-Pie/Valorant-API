@@ -18,7 +18,7 @@
 
         <div class="flex">
             <div class="flex w-2/3">
-                <li class="flex items-center pl-10 p-5 hover:cursor-pointer"><img class="flex h-7" src="/media/assets/Valorant Logo.jpg" alt="Valorant Logo"></li>
+                <li class="flex items-center pl-10 p-5 hover:cursor-pointer"><img class="flex h-7" src="/media/assets/ValorantLogo.jpg" alt="Valorant Logo"></li>
                 <li class="flex text-xl font-bold p-5 hover:text-[#ff4457] hover:cursor-pointer">Home</li>
                 <li class="flex text-xl font-bold p-5 hover:text-[#ff4457] hover:cursor-pointer">Agents</li>
             </div>
@@ -35,7 +35,7 @@
 
     <div class="flex w-full p-1 overflow-scroll">
         {% for agent in agentList %}
-            <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="{{agent}}" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+            <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="{{agent}}" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] hover:cursor-pointer"></input></form>
         {% endfor %}
     </div>
 
