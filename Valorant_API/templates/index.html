@@ -34,28 +34,9 @@
     <!-- Agents List -->
 
     <div class="flex w-full p-1 overflow-scroll">
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="BRIMSTONE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="PHOENIX" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="SAGE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="SOVA" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="VIPER" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="CYPHER" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="REYNA" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="KILLJOY" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="BREACH" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="OMEN" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="JETT" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="RAZE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="SKYE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="YORU" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="ASTRA" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="KAY/O" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="CHAMBER" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="NEON" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="FADE" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="HARBOUR" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="GEKKO" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
-        <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="DEADLOCK" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        {% for agent in agentList %}
+            <form method="post" action="/">{% csrf_token %}<input type="submit" name="btn_name" value="{{agent}}" class="flex text-lg p-2 m-2 font-bold rounded-lg px-5 bg-[#ABABA8] "></input></form>
+        {% endfor %}
     </div>
 
  
